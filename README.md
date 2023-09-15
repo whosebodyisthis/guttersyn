@@ -63,6 +63,8 @@ rm -rf guttersynth-sc
 rm -rf supercollider
 ```
 
+restart your norns
+
 todo:
 =====
 -- enable control to switch between internal/external osc for GutterSynthesis sound source.
