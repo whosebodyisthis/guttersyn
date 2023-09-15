@@ -63,6 +63,14 @@ rm -rf guttersynth-sc
 rm -rf supercollider
 ```
 
+todo:
+=====
+-- enable control to switch between internal/external osc for GutterSynthesis sound source.
+
+-- lua LFOs to modulate parameters
+
+-- more scales
+
 references
 ==========
 Tom Mudd's Gutter Synthesis for Max/MSP / Java:
