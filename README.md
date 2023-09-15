@@ -1,7 +1,7 @@
 # guttersyn
 norns implementation of Tom Mudd's GutterSynthesis
 
-<img width="1782" alt="Screenshot 2023-09-15 at 20 06 38" src="https://github.com/whosebodyisthis/guttersyn/assets/133358060/d429278b-5dc7-4b73-a54b-bb757d2af756">
+<img width="1782" alt="Screenshot 2023-09-15 at 20 06 38" src="https://github.com/whosebodyisthis/guttersyn/assets/133358060/81e0dfb9-954e-4e7e-838a-b876440eeab2">
 
 about
 =====
