@@ -70,7 +70,7 @@ function init()
   -- track block on current page (out of 3)
   block = 0
   -- scale names
-  scales = {"bark","12tet","24tet","maj","min","hMaj","hMin","p_o1","p_u1","dim"}
+  scales = {"12tet","24tet","maj","min","hMaj","hMin","p_o1","p_u1","dim","bark"}
 end
 
 function redraw()
