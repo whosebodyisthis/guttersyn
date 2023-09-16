@@ -13,7 +13,6 @@ Engine_GutterSynthesis : CroneEngine {
 			var freq1, freq2, snd1, snd2, scale, enableaudio=0;
 
 			scale = [
-				[50, 150, 250, 350, 455, 570, 700, 925, 1175, 1375, 1600, 1860, 2160, 2510, 2925, 3425, 4050, 4850, 5850, 7050, 8600, 10750, 13500], //Bark scale
 				Array.fill(24,{ arg i; Scale.chromatic.degreeToFreq(i, 45.midicps, 0); }),
 				Array.fill(24,{ arg i; Scale.chromatic24.degreeToFreq(i, 45.midicps, 0); }),
 				Array.fill(24,{ arg i; Scale.major.degreeToFreq(i, 45.midicps, 0); }),
@@ -23,6 +22,7 @@ Engine_GutterSynthesis : CroneEngine {
 				Array.fill(24,{ arg i; Scale.partch_o1.degreeToFreq(i, 45.midicps, 0); }),
 				Array.fill(24,{ arg i; Scale.partch_u1.degreeToFreq(i, 45.midicps, 0); }),
 				Array.fill(24,{ arg i; Scale.diminished.degreeToFreq(i, 45.midicps, 0); }),
+				[50, 150, 250, 350, 455, 570, 700, 925, 1175, 1375, 1600, 1860, 2160, 2510, 2925, 3425, 4050, 4850, 5850, 7050, 8600, 10750, 13500] //Bark scale
 			];
 
 			freq1 = Lag3.kr(pitch * Select.kr(scale1, scale)); //Pitch 0.05 - 2.0
