@@ -46,7 +46,7 @@ function init()
   params:set_action("smoothing", function(v) engine.smoothing(v) end)
   
   params:add_separator("filter bank settings")
-  params:add_control("pitch", "pitch", controlspec.new(0, 5, "lin", 0.01, 1))
+  params:add_control("pitch", "pitch", controlspec.new(0.01, 5, "lin", 0.01, 1))
   params:set_action("pitch", function(v) engine.pitch(v) end)
   
   params:add_control("q", "q", controlspec.new(10, 800, "lin", 10, 30))
