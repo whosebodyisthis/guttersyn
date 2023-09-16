@@ -9,7 +9,7 @@ this norns script implements the SuperCollider version of Tom Mudd's
 *Gutter Synthesis* with a simple and neat UI.
 
 *Gutter Synthesis* "combines chaotic synthesis based on the Duffing Oscillator dynamical system with modal-like resonances"
-(https://www.research.ed.ac.uk/en/publications/between-chaotic-synthesis-and-physical-modelling-intrumentalizing, 2019). 
+(https://www.research.ed.ac.uk/en/publications/between-chaotic-synthesis-and-physical-modelling-intrumentalizing, p217, 2019). 
 
 a forced Duffing Osciallator is passed through a bank of 24 resonant bandpass filters. The interaction between filters 
 and the chaotic nature of the Duffing oscillator offers the listener a beautiful unstable system that shifts between swarms 
