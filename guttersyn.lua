@@ -66,7 +66,8 @@ function init()
   params:set_action("gain2", function(v) engine.gain2(v) end)
   params:bang()
 
-  -- refresh screen at 30fps
+  -- refresh screen at 30fps, solution taken from 
+  -- https://github.com/justmat/massif
   local screen_metro = metro.init()
   screen_metro.time = 1/30
   screen_metro.event = function() redraw() end
