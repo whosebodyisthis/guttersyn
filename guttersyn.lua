@@ -20,6 +20,7 @@
 
 local UI = require "ui"
 engine.name = 'GutterSynthesis'
+local MU = require "musicutil"
 
 function init()
   params:add_separator()
@@ -64,6 +65,12 @@ function init()
   params:add_control("gain2", "gain2", controlspec.new(0, 2.5, "lin", 0.1, 1))
   params:set_action("gain2", function(v) engine.gain2(v) end)
   params:bang()
+
+  -- refresh screen at 30fps
+  local screen_metro = metro.init()
+  screen_metro.time = 1/30
+  screen_metro.event = function() redraw() end
+  screen_metro:start()
   
   -- track current page (out of 2)
   page = 0
@@ -171,8 +178,7 @@ function key(n,z)
   elseif n == 3 and z == 1 then
     block = (block + 1) % 2
   end
-  redraw()
-  return(n)
+  -- redraw()
 end
 
 function enc(n,d)
@@ -206,5 +212,5 @@ function enc(n,d)
   elseif n == 3 and page == 1 and block == 1 then
     params:delta("gain2",d)
   end
-  redraw()
+  -- redraw()
 end
