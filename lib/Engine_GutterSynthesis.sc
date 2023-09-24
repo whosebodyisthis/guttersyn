@@ -25,8 +25,8 @@ Engine_GutterSynthesis : CroneEngine {
 				[50, 150, 250, 350, 455, 570, 700, 925, 1175, 1375, 1600, 1860, 2160, 2510, 2925, 3425, 4050, 4850, 5850, 7050, 8600, 10750, 13500] //Bark scale
 			];
 
-			freq1 = Lag3.kr(pitch * Select.kr(scale1, scale)); //Pitch 0.05 - 2.0
-			freq2 = Lag3.kr(pitch * Select.kr(scale2, scale));
+			freq1 = Lag3.kr(pitch * Select.kr(scale1, scale)).clip(20,44100); //Pitch 0.05 - 2.0
+			freq2 = Lag3.kr(pitch * Select.kr(scale2, scale)).clip(20,44100);
 
 			snd1 = GutterSynth.ar(
 				gamma:         Lag.kr(mod),
